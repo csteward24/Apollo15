@@ -6,6 +6,8 @@
 /*----------------------------------------------------------------------------*/
 
 package edu.wpi.first.wpilibj.templates;
+import edu.wpi.first.wpilibj.Victor;
+import edu.wpi.first.wpilibj.Joystick;
 
 
 import edu.wpi.first.wpilibj.IterativeRobot;
@@ -18,12 +20,19 @@ import edu.wpi.first.wpilibj.IterativeRobot;
  * directory.
  */
 public class Apollo extends IterativeRobot {
+    Victor frontLeft = new Victor(1);
+    Victor frontRight = new Victor(3);
+    Victor backLeft = new Victor(2);
+    Victor backRight = new Victor(4);
+    Joystick xboxController = new Joystick(1);
+    Joystick operatorStick = new Joystick(2);
+    
     /**
      * This function is run when the robot is first started up and should be
      * used for any initialization code.
      */
     public void robotInit() {
-
+    
     }
 
     /**
